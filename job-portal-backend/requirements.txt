@@ -1,0 +1,7 @@
+flask
+pymongo
+isodate
+dnspython
+passlib
+pyjwt[crypto]
+flask-cors
