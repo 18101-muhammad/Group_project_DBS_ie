@@ -4,8 +4,8 @@ This is job portal repo.
 How to run
 ==================================
 1) Current this is connected to college DB
-2) First run backend api code : inside backend repo, `python start.py`
-3) then run angular webapp: inside backend repo, `npm start`
+2) First run backend api code : inside backend repo, `python start.py` api server will start on 5001
+3) then run angular webapp: inside backend repo, `npm start` frontend server will start on 4200, visit localhost:4200 to see the app.
 4) Step are given in each project code
 
 
