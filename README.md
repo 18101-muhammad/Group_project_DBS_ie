@@ -12,5 +12,7 @@ How to run
 Workflow:
 ================================
 Register --> login
+
 john@gmail.com/123456 --> is an employer, he can post the job, and see who has applied for the job.
+
 bob@gmail.com/123456 --> is a candidate, he can only apply for the job.
