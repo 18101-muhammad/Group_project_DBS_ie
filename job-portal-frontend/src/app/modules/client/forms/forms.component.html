@@ -1,0 +1,57 @@
+<h1 mat-dialog-title> Create Job</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="frm">
+    <mat-form-field>
+      <input matInput placeholder="Company" formControlName="company" class="person-input">
+      <mat-hint align="end">{{frm.controls.company.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field>
+      <input matInput placeholder="Description" formControlName="description" class="person-input">
+      <mat-hint align="end">{{frm.controls.description.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field>
+      <input matInput  placeholder="Experience" formControlName='experience'>
+      <mat-hint align="end">{{frm.controls.experience.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field>
+      <input matInput  placeholder="Location" formControlName='location'>
+      <mat-hint align="end">{{frm.controls.location.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field>
+      <input matInput  placeholder="Profile" formControlName='profile'>
+      <mat-hint align="end">{{frm.controls.profile.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field>
+      <input matInput  placeholder="Skill" formControlName='skill'>
+      <mat-hint align="end">{{frm.controls.skill.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+
+    <br />
+
+
+  </form>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]>Cancel</button>
+  <button mat-raised-button color="primary" (click)='save(frm)' class="btnSave" [disabled]="!frm.valid">
+    <mat-icon aria-label="icon-button"> </mat-icon>
+    <span>Create</span>
+  </button>
+</div>
