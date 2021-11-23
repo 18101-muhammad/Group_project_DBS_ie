@@ -8,7 +8,9 @@ How to run
 2) First run backend api code : 
 3) 
     virtualenv venv --python=python3
+    
     source venv/bin/activate
+    
     pip install -r requirements.txt
 
 4) `python start.py` api server will start on 5001
