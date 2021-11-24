@@ -1,5 +1,8 @@
 This is job portal repo.
 
+Requirement:
+Python 3
+nodejs 14.17.0
 
 
 How to run
