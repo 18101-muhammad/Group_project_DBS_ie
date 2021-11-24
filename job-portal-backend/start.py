@@ -20,6 +20,7 @@ def after_request(response):
     header["Access-Control-Allow-Origin"] = "*"
     header["Access-Control-Allow-Headers"] = "*"
     header["Access-Control-Allow-Methods"] = "*"
+    print("In after request header")
     return response
 
 #end of code to run it

@@ -25,7 +25,7 @@ def login():
              key="jobportal@123"
          )
          print("Login succeeded!")
-         return jsonify({"token": token.decode('UTF-8')})
+         return jsonify({"token": token})
      else:
          return Response(
              json.dumps({"success": False, "message": "Check your details"}),
