@@ -1,12 +1,26 @@
 This is job portal repo.
 
+Requirement:
+Python 3
+nodejs 14.17.0
+
 
 How to run
 ==================================
 1) Current this is connected to college DB
-2) First run backend api code : inside backend repo, `python start.py` api server will start on 5001
-3) then run angular webapp: inside backend repo, `npm start` frontend server will start on 4200, visit localhost:4200 to see the app.
-4) Step are given in each project code
+2) First run backend api code : 
+3) 
+    virtualenv venv --python=python3
+    
+    source venv/bin/activate
+    
+    pip install -r requirements.txt
+
+4) `python start.py` api server will start on 5001
+5) then run angular webapp: inside backend repo, 
+6) `npm install`
+7) `npm start` frontend server will start on 4200, visit localhost:4200 to see the app.
+8) Step are given in each project code
 
 
 Workflow:
