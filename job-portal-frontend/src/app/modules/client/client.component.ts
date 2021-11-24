@@ -102,7 +102,8 @@ export class ClientComponent implements AfterViewInit, OnInit, Controller {
           this.isLoading = false;
           this.isTotalReached = false;
           console.log("**********"+JSON.stringify(data))
-          this.totalItems = data.length;
+
+          this.totalItems = (<any>data).length;
           return data;
         }),
         catchError(() => {
@@ -110,7 +111,7 @@ export class ClientComponent implements AfterViewInit, OnInit, Controller {
           this.isTotalReached = true;
           return observableOf([]);
         })
-      ).subscribe(data => this.dataSource.data = data);
+      ).subscribe(data => this.dataSource.data = (<any>data));
   }
 
   edit(client: Client): void {

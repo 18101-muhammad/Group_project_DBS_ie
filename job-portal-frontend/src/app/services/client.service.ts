@@ -39,7 +39,7 @@ export class ClientService implements Provider {
 
 
 
-  getOne(id: number): Observable<Response> {
+  getOne(id: string): Observable<Response> {
     return this.http.get<Response>(
       CONSTANST.routes.client.get.replace(':id', String(id))+'/apply',
       { headers: this.headers }
