@@ -1,7 +1,4 @@
-import { environment } from './environments/environment';
-
-
-const HOST = environment.host;
+const HOST = 'http://localhost:5001';
 
 export const CONSTANST = {
     permissions: {},
