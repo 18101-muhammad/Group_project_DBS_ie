@@ -12,7 +12,8 @@ authentication = Blueprint('authentication', __name__)
 def login():
      input_json = request.get_json(force=True)
      dbUser = getUser(input_json['userName'])
-     if sha256_crypt.verify(input_json['password'], dbUser['password']):
+
+     if  dbUser != None and 'password' in dbUser and 'password' in input_json and sha256_crypt.verify(input_json['password'], dbUser['password']):
          payload_data = {
              "sub": "jobportal",
              "name": dbUser['name'],
@@ -25,7 +26,7 @@ def login():
              key="jobportal@123"
          )
          print("Login succeeded!")
-         return jsonify({"token": token})
+         return jsonify({"token": token.decode('UTF-8'), "type": dbUser['type']})
      else:
          return Response(
              json.dumps({"success": False, "message": "Check your details"}),
