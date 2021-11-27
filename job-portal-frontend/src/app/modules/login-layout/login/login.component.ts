@@ -16,6 +16,7 @@ import { SnackbarComponent } from '~components/snackbar/snackbar.component';
 export class LoginComponent implements OnInit {
   public form: FormGroup;
   public isLogin = false;
+  public isWrongCred = false;
 
   constructor(
     private fb: FormBuilder,
@@ -62,14 +63,17 @@ export class LoginComponent implements OnInit {
   public login() {
     if (this.form.valid) {
       this.isLogin = true;
+      this.isWrongCred = false;
       this.authService.login(this.form.value).subscribe(
         (data: any) => {
           this.isLogin = false;
           if (data.token) {
             this.authService.loggedIn.next(true);
             localStorage.setItem('token', data.token);
+            localStorage.setItem('type', data.type);
             this.router.navigate(['/']);
           } else {
+
             this.snack.openFromComponent(SnackbarComponent, {
               data: { data: data },
               duration: 3000
@@ -77,6 +81,7 @@ export class LoginComponent implements OnInit {
           }
         },
         (error) => {
+           this.isWrongCred = true;
           console.log(error);
           this.isLogin = false;
         }

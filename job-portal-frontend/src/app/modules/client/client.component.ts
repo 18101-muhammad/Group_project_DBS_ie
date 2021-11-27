@@ -36,6 +36,8 @@ export class ClientComponent implements AfterViewInit, OnInit, Controller {
   public isTotalReached = false;
   public totalItems = 0;
   public search = '';
+  public showApplybutton = false;
+
 
   @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
@@ -53,6 +55,8 @@ export class ClientComponent implements AfterViewInit, OnInit, Controller {
     if (!this.authService.loggedIn.getValue()) {
       this.router.navigate(['/login']);
     }
+    this.showApplybutton = localStorage.getItem('type') == '2' ? true:  false
+    console.log(this.showApplybutton)
   }
 
   ngAfterViewInit() {
@@ -115,20 +119,21 @@ export class ClientComponent implements AfterViewInit, OnInit, Controller {
   }
 
   edit(client: Client): void {
+    if(this.showApplybutton){
     this.clientService.getOne(client._id).subscribe((data: any) => {
-      if (data.success) {
-        const dialogRef = this.dialog.open(FormsComponent, {
-          width: '400px',
-          data: { title: 'Update person', action: 'edit', data: data.data }
-        });
-
-        dialogRef.afterClosed().subscribe(result => {
-          if (result) {
-            this.paginator._changePageSize(this.paginator.pageSize);
-          }
-        });
+      if (data) {
+        this.snack.openFromComponent(SnackbarComponent, {
+              data: { message: 'Applied' },
+              duration: 3000
+            });
       }
     });
+    }else{
+      this.snack.openFromComponent(SnackbarComponent, {
+              data: { message: 'Invalid operation' },
+              duration: 3000
+            });
+    }
   }
 
   save(): void {

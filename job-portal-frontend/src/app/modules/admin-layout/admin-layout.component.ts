@@ -21,6 +21,7 @@ export class AdminLayoutComponent implements OnInit {
 
   @ViewChild('progressBar', { static: false })
   progressBar: ElementRef;
+  public showappliedbutton = false;
 
   constructor(
     private authService: AuthService,
@@ -43,6 +44,7 @@ export class AdminLayoutComponent implements OnInit {
 
   ngOnInit() {
     this.isLoggedIn$ = this.authService.isLoggedIn;
+    this.showappliedbutton = localStorage.getItem('type') == '1' ? true:  false
   }
 
   ngOnDestroy(): void {
@@ -63,6 +65,7 @@ export class AdminLayoutComponent implements OnInit {
           if (data.success) {
             this.authService.loggedIn.next(false);
             localStorage.removeItem('token');
+            localStorage.removeItem('type');
             this.router.navigate(['/login']);
           }
         });

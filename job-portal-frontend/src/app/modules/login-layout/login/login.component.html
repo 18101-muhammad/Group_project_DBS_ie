@@ -1,5 +1,6 @@
 <div class="signin-content animated fadeIn">
   <mat-card>
+     <div *ngIf="isWrongCred" style="color:red">Invalid username or password</div>
     <mat-card-content>
       <img src="assets/img/1.png" width="200px" onmousedown="return false;">
       <form [formGroup]="form" (ngSubmit)="login()">
