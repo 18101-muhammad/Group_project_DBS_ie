@@ -71,11 +71,11 @@ Tech stack:
    ○	Flask
    ○	Mongodb
    
-●Frontend
+●Frontend\
    ○    Angular
    
 ##Group Members##
- Name: #Tintu Joy
+ Name: Tintu Joy
  ID: 10592772
  Name: Muhammad Abdullah
  ID: 10548559
