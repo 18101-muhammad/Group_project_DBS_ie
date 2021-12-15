@@ -65,7 +65,7 @@ Webapp should enable employers and candidates to register and use the applicatio
 
 **Architecture:**
 
-![alt text](https://github.com/18101-muhammad/Group_project_DBS_ie/blob/main/Overview.png)
+![alt text](https://github.com/18101-muhammad/Group_project_DBS_ie/blob/main/Snaps/Overview.png)
  
 
 Tech stack:\
@@ -83,6 +83,17 @@ Tech stack:\
  Name: Muhammad Abdullah\
  ID: 10548559
  
+ 
+ **AWS:**\
+ 
+ Static URL hosting through AWS
+ http://34.249.73.123 
+ ![alt text](https://github.com/18101-muhammad/Group_project_DBS_ie/blob/main/Snaps/Overview.png)
+ ![alt text](https://github.com/18101-muhammad/Group_project_DBS_ie/blob/main/Snaps/AWS.png)
+ ![alt text](https://github.com/18101-muhammad/Group_project_DBS_ie/blob/main/Snaps/STATIC.PNG)
+
+
+**DNS**\
 [WebSite](http://www.ruktechnologies.com)
 
 
