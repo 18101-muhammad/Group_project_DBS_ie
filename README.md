@@ -83,6 +83,6 @@ Tech stack:\
  Name: Muhammad Abdullah\
  ID: 10548559
 
-![WebSite](http://www.ruktechnologies.com/)
+[WebSite](http://www.ruktechnologies.com)
 
 
