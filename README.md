@@ -65,12 +65,12 @@ Webapp should enable employers and candidates to register and use the applicatio
  
 
 Tech stack:
-●	Backend
-○	Python
-○	Flask
-○	Mongodb
-●	Frontend
-○	Angular
+●	Backend\
+   ○	Python
+   ○	Flask
+   ○	Mongodb
+●	Frontend\
+   ○    Angular
 
 
 
