@@ -44,10 +44,11 @@ What is provided:
                                                                                     
 ## Quick Overview Over Topology                                                                                     
                                                                                     
-                                                                      **Job Portal**
+                                                                      #Job Portal#
 
 **Objective:**
-Webapp should enable employers and candidates to register and use the application for their requirements.\
+
+Webapp should enable employers and candidates to register and use the application for their requirements.
 
 
 **Personas:**
