@@ -47,21 +47,21 @@ What is provided:
                                                                             #Job Portal#
 
 **Objective:**
-Webapp should enable employers and candidates to register and use the application for their requirements.
+Webapp should enable employers and candidates to register and use the application for their requirements.\
 
 
 **Personas:**
-●	Employer - Who post the jobs
-●	Candidate - Who watches those jobs and can apply for it
+●	Employer - Who post the jobs\
+●	Candidate - Who watches those jobs and can apply for it\
 
 **Use case:**
 
-●	User can register themself as Employer and Candidate
-●	User can login into system  
-●	Employer should able to post the job, Watch all the candidate who applied for job
-●	Candidate can see the Job and apply for it 
+●	User can register themself as Employer and Candidate\
+●	User can login into system\  
+●	Employer should able to post the job, Watch all the candidate who applied for job\
+●	Candidate can see the Job and apply for it\ 
 
-**Architecture:**\
+**Architecture:**
 
 ![alt text](https://github.com/18101-muhammad/Group_project_DBS_ie/blob/main/Overview.png)
  
