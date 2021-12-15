@@ -52,13 +52,13 @@ Webapp should enable employers and candidates to register and use the applicatio
 
 **Personas:**
 
-●	Employer - Who post the jobs
-●	Candidate - Who watches those jobs and can apply for it\
+●	Employer - Who post the jobs\
+●	Candidate - Who watches those jobs and can apply for it
 
 **Use case:**
 
-●	User can register themself as Employer and Candidate
-●	User can login into system 
+●	User can register themself as Employer and Candidate\
+●	User can login into system\
 ●	Employer should able to post the job, Watch all the candidate who applied for job\
 ●	Candidate can see the Job and apply for it
 
