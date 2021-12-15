@@ -44,7 +44,7 @@ What is provided:
                                                                                     
 ## Quick Overview Over Topology                                                                                     
                                                                                     
-                                                                                    ***Job Portal***
+                                                                            #Job Portal#
 
 **Objective:**
 Webapp should enable employers and candidates to register and use the application for their requirements.
@@ -55,6 +55,7 @@ Webapp should enable employers and candidates to register and use the applicatio
 ●	Candidate - Who watches those jobs and can apply for it
 
 **Use case:**
+
 ●	User can register themself as Employer and Candidate
 ●	User can login into system  
 ●	Employer should able to post the job, Watch all the candidate who applied for job
@@ -65,12 +66,19 @@ Webapp should enable employers and candidates to register and use the applicatio
  
 
 Tech stack:
-●	Backend\
+●Backend\
    ○	Python
    ○	Flask
    ○	Mongodb
-●	Frontend\
+   
+●Frontend
    ○    Angular
+   
+##Group Members##
+ Name: #Tintu Joy
+ ID: 10592772
+ Name: Muhammad Abdullah
+ ID: 10548559
 
 
 
