@@ -74,7 +74,7 @@ Tech stack:
 ●Frontend\
    ○    Angular
    
-#Group Members#
+**Group Members**\
  Name: Tintu Joy\
  ID: 10592772\
  Name: Muhammad Abdullah\
