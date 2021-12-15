@@ -61,11 +61,12 @@ Webapp should enable employers and candidates to register and use the applicatio
 ●	Employer should able to post the job, Watch all the candidate who applied for job
 ●	Candidate can see the Job and apply for it 
 
-**Architecture:**
+**Architecture:**\
+
 ![alt text](https://github.com/18101-muhammad/Group_project_DBS_ie/blob/main/Overview.png)
  
 
-Tech stack:
+Tech stack:\
 ●Backend\
    ○	Python
    ○	Flask
