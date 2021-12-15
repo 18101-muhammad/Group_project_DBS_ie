@@ -52,7 +52,7 @@ Webapp should enable employers and candidates to register and use the applicatio
 
 **Personas:**
 
-●	Employer - Who post the jobs\
+●	Employer - Who post the jobs
 ●	Candidate - Who watches those jobs and can apply for it\
 
 **Use case:**
